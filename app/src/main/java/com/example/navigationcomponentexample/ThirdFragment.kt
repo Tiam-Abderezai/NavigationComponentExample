@@ -26,6 +26,7 @@ class ThirdFragment : Fragment() {
 
     private fun initUI() {
         binding.apply {
+            tvThirdFrag.text = args.argName
             btnGoBack.setOnClickListener {
                 findNavController().popBackStack()
             }

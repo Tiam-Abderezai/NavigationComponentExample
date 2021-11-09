@@ -24,7 +24,7 @@ class FirstFragment : Fragment() {
    private fun initUI(){
         binding.apply {
             btnSecondFrag.setOnClickListener {
-                val action = FirstFragmentDirections.actionFirstFragmentToSecondFragment(tv_first_frag.text.toString())
+                val action = FirstFragmentDirections.actionFirstFragmentToSecondFragment("Second Page")
                 findNavController().navigate(action)
             }
         }
